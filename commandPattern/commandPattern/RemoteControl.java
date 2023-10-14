@@ -10,9 +10,10 @@ public class RemoteControl {
 
     public void setCommand(Command command) {
         this.command = command;
+     }
+
+    public String clickButton(){
+        return command.execute();
     }
 
-    public void clickButton(){
-        command.execute();
-    }
 }
