@@ -5,7 +5,7 @@ public class Valet implements HotelService{
         this.hotelService = hotelService;
     }
 
-    public Vehicle pickUpVehicle(String plateNummber) {
-        
+    public void pickUpVehicle(String plateNummber) {
+        Vehicle vehicle = hotelService.pickUpVehicle(plateNummber);
     }
 }   
